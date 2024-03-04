@@ -1,0 +1,247 @@
+/* este formulario sera visible unicamente cuando se accione el boton agregar contyacto que se encuentra en el componente "App.jsx" */
+
+/* formulario de agregar contacto */
+
+.contenedor-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.formulario {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--box-shadow);
+    border: 2px solid var(--color-font);
+    padding: 3% 4%;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+}
+
+/* encabezado del formulario */
+
+.formulario-superiror {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 5%;
+    padding-bottom: 2%;
+}
+
+.lado-izquierdo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-formulario {
+    font-size: 170%;
+    font-weight: 700;
+    color: var(--color-font);
+    margin-left: 5%;
+    text-shadow: var(--text-shadow);
+}
+
+/* icono de agregar contacto */
+
+.add-formulario {
+    color: var(--color-font);
+    font-size: 180%;
+    text-shadow: var(--text-shadow);
+}
+
+/* boton cerrar formulario */
+
+.btn-cerrar {
+    border: none;
+    background: none;
+    color: var(--color-font);
+    font-size: 170%;
+    text-shadow: var(--text-shadow);
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+/* estilos del cuerpo de formulario */
+
+.contenido-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0%;
+}
+
+label {
+    width: 20%;
+    color: var(--color-font);
+    font-size: 130%;
+    text-shadow: var(--text-shadow);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 75%;
+    padding: 1% 4%;
+    border: 2px solid var(--color-font);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    font-family: var(--fuente-secundaria);
+    font-size: 130%;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    color: var(--color-font);
+}
+
+input::placeholder {
+    color: var(--color-font);
+}
+
+input:focus {
+    border: none;
+    color: var(--color-font);
+}
+
+
+/* estilo del boton agregar contacto del fomulario */
+
+.boton-agregar-form {
+    width: 60%;
+    border: 2px solid var(--color-font);
+    background: transparent;
+    backdrop-filter: blur(100px);
+    padding: 2% 1%;
+    margin: 2% 1%;
+    font-family: var(--fuente-secundaria);
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 20px;
+    color: var(--color-font);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+}
+
+/* media queries */
+
+/* media queries de 1025 px */
+
+@media screen and (max-width: 1025px) {
+
+    /* formulario */
+
+    .formulario {
+        width: 70%;
+        top: 20%;
+        left: 16%;
+    }
+}
+
+/* media queries de 951 px */
+
+@media screen and (max-width: 951px) {
+
+    /* formulario */
+
+    .formulario {
+        width: 80%;
+        left: 12%;
+    }
+}
+
+
+/* media queries de 769 px */
+
+@media screen and (max-width: 769px) {
+
+    /* formulario */
+
+    .formulario {
+        padding: 3% 3%;
+    }
+
+    /* titulo formulario */
+
+    .titulo-formulario {
+        font-size: 150%;
+    }
+
+    /* label formulario */
+
+    label {
+        font-size: 120%;
+    }
+}
+
+/* media queries de 391 px */
+
+@media screen and (max-width: 391px) {
+
+    /* formulario */
+
+    .formulario {
+        top: 25%;
+        left: 11%;
+    }
+
+    .lado-izquierdo {
+        width: 80%;
+    }
+
+    /* titulo formulario */
+
+    .titulo-formulario {
+        font-size: 120%;
+    }
+
+    /* boton cerrar formulario */
+
+    .btn-cerrar {
+        font-size: 120%;
+    }
+
+
+    /* cuerpo formulario */
+
+    .input-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    input {
+        width: 95%;
+    }
+
+    /* boton agregar contacto al formulario */
+
+    .boton-agregar-form {
+        width: 80%;
+        font-size: 100%;
+        padding: 2% 0%;
+    }
+}

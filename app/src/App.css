@@ -1,0 +1,276 @@
+/* importacion de fuentes Cutive y Montserrat*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*  normalize*/
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --fuente-principal: "Cutive", serif;
+    --fuente-secundaria: "Montserrat", sans-serif;
+    --color-fondo: #170312;
+    --color-font: #fdffe4;
+    --color-bordes: #e5c2c3;
+    --color-fondo-cajas: #ffd8d8;
+    --color-eliminar-contacto: #a4050a;
+    --box-shadow: 1px 1px 25px var(--color-bordes);
+    --text-shadow: 1px 1px 20px var(--color-bordes);
+}
+
+body {
+    background: url(./assets/fondo.jpg);
+    position: relative;
+    padding-bottom: 100%;
+}
+
+/* header */
+
+.header {
+    font-family: var(--fuente-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4% 2%;
+    width: 100%;
+}
+
+/* titulo principal de la app */
+
+.header-titulo {
+    color: var(--color-font);
+    text-shadow: var(--text-shadow);
+    font-size: 500%;
+    letter-spacing: 4px;
+    line-height: 110%;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+/* barra de busqueda y boton agregar contacto */
+
+.barra-boton {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* boton agregar contacto */
+.btn-agregar {
+    width: 25%;
+}
+
+.boton-agregar {
+    width: 100%;
+    border: 2px solid var(--color-font);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 4% 1%;
+    font-family: var(--fuente-secundaria);
+    font-size: 170%;
+    font-weight: 700;
+    border-radius: 20px;
+    color: var(--color-font);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.btn {
+    margin: 3%;
+}
+
+/* los estilos de la barra de busqueda, componente "Filtro.jsx", se encuentra en la carpeta "Filtro"  en el archivo "Filtro.css" */
+
+/* los estilos del componente "Formulario.jsx" que se llama desde le boton "agregar contacto" se encuentra en la carpeta de "Formulario" en el archivo "Formulario.css" */
+
+/* main donde se encuentra el listado de contactos */
+
+.agenda-contactos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajas-contactos {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.caja-contacto {
+    width: 90%;
+}
+
+.caja-eliminar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* los estilos de cada caja de contacto, componente "Detalle.jsx", se encuentra en la carpeta "Detalle"  en el archivo "Detalle.css" */
+
+/* los estilos boton eliminar contacto, componente "Contacto.jsx", se encuentra en la carpeta "Contacto"  en el archivo "Contacto.css" */
+
+/* footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    font-family: var(--fuente-secundaria);
+    color: var(--color-font);
+}
+
+.barra-divisora {
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-font);
+}
+
+.titulo-footer {
+    font-weight: 500;
+    font-size: 120%;
+    padding: 1%;
+    text-align: center;
+}
+
+.sub-titulo-footer {
+    font-weight: 600;
+    font-size: 120%;
+    margin-bottom: 3%;
+}
+
+
+/* media queries */
+
+/* media queries de 1025 px */
+
+@media screen and (max-width: 1025px) {
+
+    /* header */
+
+    .header-titulo {
+        font-size: 400%;
+    }
+
+    /* boton agregar contacto */
+
+    .boton-agregar {
+        font-size: 130%;
+    }
+
+    /* listado de contactos */
+
+    .cajas-contactos {
+        width: 70%;
+    }
+}
+
+/* media queries de 951 px */
+
+@media screen and (max-width: 951px) {
+
+    /* header */
+
+    .header-titulo {
+        font-size: 370%;
+    }
+
+    /* boton agregar contacto */
+
+    .boton-agregar {
+        font-size: 110%;
+    }
+}
+
+/* media queries de 769 px */
+
+@media screen and (max-width: 769px) {
+
+    /* header */
+
+    .header-titulo {
+        font-size: 300%;
+    }
+
+    /* boton agregar contacto */
+
+    .btn-agregar {
+        width: 30%;
+    }
+}
+
+
+/* media queries de 391 px */
+
+@media screen and (max-width: 391px) {
+
+    body {
+        padding-bottom: 200%;
+    }
+
+    /* header */
+
+    .header-titulo {
+        font-size: 250%;
+    }
+
+    /* boton agregar barra de busqueda */
+
+    .barra-boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    /* boton agregar contacto */
+
+    .btn-agregar {
+        width: 60%;
+        margin-bottom: 5%;
+        font-size: 90%;
+    }
+
+    /* listado de contactos */
+
+    .cajas-contactos {
+        width: 90%;
+    }
+
+    .caja-contacto {
+        width: 85%;
+    }
+
+    /* footer */
+
+    .titulo-footer {
+        font-size: 100%;
+        padding: 2%;
+    }
+
+    .sub-titulo-footer {
+        font-size: 110%;
+        padding: 2%;
+    }
+}

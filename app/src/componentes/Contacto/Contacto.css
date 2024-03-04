@@ -1,0 +1,34 @@
+/* estilos y ubicacion del boton de eliminar contacto */
+
+.btn-borrar-contacto {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 18px 0px 47px 10px;
+}
+
+
+.bi-person-fill-dash {
+    color: var(--color-font);
+    cursor: pointer;
+    font-size: 300%;
+    text-shadow: var(--text-shadow);
+    backdrop-filter: var(--box-shadow);
+}
+
+
+/* media queries de 391 px */
+
+@media screen and (max-width: 391px) {
+
+    .btn-borrar-contacto {
+        margin: 11px 0px 22px 10px;
+    }
+
+    .bi-person-fill-dash {
+        font-size: 200%;
+    }
+}
