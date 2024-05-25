@@ -23,3 +23,7 @@ La "Agenda de Contactos" es una app simple para gestionar tus contactos. Puedes 
   - cd app
   - npm run dev
   - aparecerá un link, ctrl + click y abrirá nuestra app en el navegador.
+
+## Vistas utilizadas:
+
+- Utilizando la herramienta Resposively App las siguientes vistas: MacBook Pro (1140x900), LaptopWith Touch (950x1280), iPad (768x1024) e iPhone 12 Pro (390x844).
