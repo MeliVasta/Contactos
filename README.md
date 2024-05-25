@@ -17,7 +17,9 @@ La "Agenda de Contactos" es una app simple para gestionar tus contactos. Puedes 
 
 ## Para poder visualizarlo desde Visual Studio Code
 
-- Primero debemos abrir la terminal y correr los siguientes comandos en Command Prompt:
+- Abrir la terminal (ctrl + ñ)
+- En el lado derecho de la terminal hacer click en "v" Launch Profile, boton al lado de "+", seleccionar "Command Prompt"
+- Ingresar los siguientes comandos en pestaña "Terminal":
   - cd app
   - npm run dev
-  - aparecerá un link, ctrl + click y abrirá nuestra app en el navegador
+  - aparecerá un link, ctrl + click y abrirá nuestra app en el navegador.
